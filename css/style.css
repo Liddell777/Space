@@ -96,4 +96,22 @@ a {
 .phone{
     font-size: 24px;
     line-height: 29px;
+    margin-left: auto;
+}
+
+.login {
+    margin-left: 22px;
+    margin-right: 134px;
+}
+.header__title {
+    font-family: 'spaceagecyrillic';
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 600;
+}
+.header__title span{
+    font-family: 'spaceagecyrillic';
+    font-size: 110px;
+    line-height: 110px;
+   
 }
