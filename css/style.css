@@ -49,6 +49,7 @@ button{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color: inherit;
 }
 
 
@@ -103,15 +104,53 @@ a {
     margin-left: 22px;
     margin-right: 134px;
 }
-.header__title {
+
+.header__content{
+    max-width: 600px;
+}
+
+.header__title{
     font-family: 'spaceagecyrillic';
     font-size: 60px;
     line-height: 60px;
-    font-weight: 600;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
+
 .header__title span{
     font-family: 'spaceagecyrillic';
     font-size: 110px;
-    line-height: 110px;
-   
+}
+
+.header__txt{
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.header__btn{
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 15px 10px 16px;
+}
+.header__description{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+.header__description-txt{
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.header__description-txt + .header__description-txt{
+    margin-left: 52px;
 }
