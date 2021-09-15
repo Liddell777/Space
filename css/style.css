@@ -244,3 +244,39 @@ a {
     line-height: 17px;
     display: block;
 }
+.how-to{
+    background-image: url(../images/how-to\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+ /*    background-size: cover; */
+    padding-bottom: 100px;
+}
+.how-to__box{
+    text-align: center;
+}
+.how-to__box circle,
+.how-to__box text,
+foreignObject{
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.how-to__box g:hover circle{
+    r: 20px;
+    fill: #036CCA;
+}
+
+.how-to__box g:hover text{
+    fill: #036CCA;
+    font-size: 35px;
+}
+
+.how-to__box g:hover foreignObject{
+    color: #036CCA;
+    font-size: 22px;
+}
+
+foreignObject{
+    text-align: left;
+}
