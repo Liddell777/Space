@@ -508,3 +508,196 @@ foreignObject{
     justify-content: flex-end;
     margin-left: auto;
 }
+.footer{
+    background-image: url(../images/footer\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 100px 0 150px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__txt{
+    width: 165px;
+    margin-right: 50px;
+}
+.footer__txt p + p{
+    margin-top: 50px;
+}
+.footer__menu{
+    list-style: none;
+    width: 120px;
+    margin-right: 95px;
+}
+.footer__links{
+    list-style: none;
+    width: 165px;
+}
+
+.footer__menu-item,
+.footer__links-item{
+    margin-bottom: 20px;
+}
+
+.footer__menu-link,
+.footer__links-link{
+    text-transform: uppercase;
+    transition: color .5s;
+}
+
+.footer__menu-link:hover,
+.footer__links-link:hover{
+    color: #CB0E0E;
+}
+
+.menu-btn{
+    display: none;
+    width: 40px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    height: 30px;
+}
+
+.menu-btn span{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.menu-btn span::before{
+    top: -10px;
+}
+.menu-btn span::after{
+    top: 10px;
+}
+
+@media (max-width: 1024px){
+    .login{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 895px){
+    .header__top{
+        padding-top: 30px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu__list{
+        transform: translateY(-150%);
+        transition: all .5s;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .menu__list.active{
+        transform: translateY(0);
+    }
+    .menu__item{
+        padding: 15px 0;
+    }
+    .menu__link{
+        display: block;
+    }
+    .phone,
+    .login{
+        position: relative;
+        z-index: 20;
+    }
+    .header__content{
+        margin: 0 auto;
+    }
+    .header__description{
+        justify-content: center;
+    }
+    .header{
+        background-position: center right;
+    }
+}
+
+@media (max-width: 620px){
+    .header__title{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .header__title span{
+        font-size: 34px;
+    }
+    .header__content{
+        text-align: center;
+    }
+    .header__txt{
+        justify-content: center;
+        font-size: 18px;
+    }
+    .header__txt p{
+        padding: 0 10px;
+    }
+    .header__btn{
+        font-size: 18px;
+        line-height: 24px;
+        width: 60%;
+    }
+    .header__description{
+        display: block;
+    }
+    .header__description-txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__description-txt + .header__description-txt{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .header__top{
+        flex-wrap: wrap;
+    }
+    .phone{
+        width: 100%;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .menu,
+    .login{
+        order: -1;
+    }
+    .menu__list{
+        padding-top: 110px;
+    }
+    .header__title{
+        font-size: 28px;
+    }
+    .header__title span{
+        font-size: 32px;
+    }
+    .header__btn{
+        font-size: 16px;
+        width: 100%;
+    }
+}
